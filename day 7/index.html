@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="text" name="" id="one" />
+    <input type="text" name="" id="two" />
+    <button onclick="add()">Add</button>
+    <p id="p"></p>
+
+    <script>
+      function add() {
+        let a = Number(document.querySelector("#one").value);
+        let b = Number(document.querySelector("#two").value);
+        let c = a + b;
+        document.querySelector("#p").innerHTML = c;
+      }
+    </script>
+  </body>
+</html>
