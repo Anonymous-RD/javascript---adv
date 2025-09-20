@@ -1,0 +1,9 @@
+-> create a new folder 
+-> cd to that folder
+-> open terminal
+-> run command  npm create vite@latest
+-> select framework as React
+-> select variant as javascript
+-> cd app name 
+-> npm install
+-> npm run dev
