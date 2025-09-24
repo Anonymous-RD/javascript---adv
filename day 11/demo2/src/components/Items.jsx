@@ -1,32 +1,38 @@
 import React from "react";
 import Cards from "./Cards";
 
-const data = [
-  {
-    name: "Dabang",
-    time: "2.5hrs",
-  },
-  {
-    name: "War",
-    time: "2.4hrs",
-  },
-  {
-    name: "F1",
-    time: "2.2hrs",
-  },
-  {
-    name: "Dhoom",
-    time: "2.5hrs",
-  },
-  {
-    name: "KGF",
-    time: "2.3hrs",
-  },
-  {
-    name: "RRR",
-    time: "3hrs",
-  },
-];
+// const data = [
+//   {
+//     name: "Dabang",
+//     time: "2.5hrs",
+//   },
+//   {
+//     name: "War",
+//     time: "2.4hrs",
+//   },
+//   {
+//     name: "F1",
+//     time: "2.2hrs",
+//   },
+//   {
+//     name: "Dhoom",
+//     time: "2.5hrs",
+//   },
+//   {
+//     name: "KGF",
+//     time: "2.3hrs",
+//   },
+//   {
+//     name: "RRR",
+//     time: "3hrs",
+//   },
+// ];
+const data = {
+  name: "Dabang",
+  age: 12,
+  qualificaiton: "Graduate",
+  course: "MERN",
+};
 
 function Items() {
   return (
@@ -35,9 +41,12 @@ function Items() {
         // console.log(item.name);
         <Cards></Cards>;
       })} */}
-      {data.map((item) => (
-        <Cards name={item.name} time={item.time}></Cards>
-      ))}
+      {/* {data.map((item) => (
+       
+      ))} */}
+      <Cards name={data.name} time={data.age} course={data.course}></Cards>
+      {/* <h1>{data.name}</h1>
+     
 
       {/* <Cards name="Dhoom" time="2.5hrs"></Cards>
       <Cards name="War" time="2.4hrs"></Cards>
