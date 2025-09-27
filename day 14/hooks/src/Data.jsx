@@ -27,12 +27,14 @@ function Data() {
           // data.includes(searchedData);
         }}
       />
-      {data.map((item) => (
-        <ul>
-          <li>Name - {item.name}</li>
-          <li>Username -{item.username}</li>
-        </ul>
-      ))}
+      {data
+        .filter((item) => item.name.toLowerCase().includes(searchQuery))
+        .map((item) => (
+          <ul>
+            <li>Name - {item.name}</li>
+            <li>Username -{item.username}</li>
+          </ul>
+        ))}
     </div>
   );
 }
