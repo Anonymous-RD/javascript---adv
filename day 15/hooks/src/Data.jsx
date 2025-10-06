@@ -6,15 +6,12 @@ function Data() {
   const [searchQuery, setSearchQuery] = useState("");
   const [loading, setLoading] = useState(true);
   useEffect(() => {
-    fetch("https://restcountries.com/v3.1/all?fields=name,flags").then(
-      (response) => {
-        response.json().then((json) => {
-          setData(json);
-          console.log(json);
-          setLoading(false);
-        });
-      }
-    );
+    fetch("https://jsonplaceholder.typicode.com/users").then((response) => {
+      response.json().then((json) => {
+        setData(json);
+        setLoading(false);
+      });
+    });
   }, []);
   if (loading) return <Load></Load>;
 

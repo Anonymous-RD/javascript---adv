@@ -31,13 +31,13 @@
 //   return p;
 // }
 
-// async function mainfunction() {
-//   console.log("first");
-//   await one();
-//   await two();
-//   await three();
-//   console.log("last");
-// }
+async function mainfunction() {
+  console.log("first");
+  await one();
+  await two();
+  await three();
+  console.log("last");
+}
 
 // mainfunction();
 
