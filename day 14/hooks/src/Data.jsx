@@ -6,7 +6,7 @@ function Data() {
   const [searchQuery, setSearchQuery] = useState("");
   const [loading, setLoading] = useState(true);
   useEffect(() => {
-    fetch("https://restcountries.com/v3.1/all?fields=name,flags").then(
+    fetch("https://restcountries.com/v3.1/independent?status=true").then(
       (response) => {
         response.json().then((json) => {
           setData(json);
