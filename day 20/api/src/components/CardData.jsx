@@ -2,17 +2,17 @@ import React from "react";
 import "./CardData.css";
 
 function CardData(props) {
-  console.log(props);
+  // console.log(props);
   return (
     <div>
-      <a className="country-card" href={`/`}>
+      <a class="country-card" href="/countrypage">
         <img
           src={props.data.flags.png}
           alt={props.data.flags.alt}
           height={100}
         />
-        <div className="card-text">
-          <h3 className="card-title">{props.data.name.common}</h3>
+        <div class="card-text">
+          <h3 class="card-title">{props.data.name.common}</h3>
           {/* 
           <p>
             <b>Name: </b>

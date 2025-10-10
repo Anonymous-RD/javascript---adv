@@ -19,7 +19,7 @@ function Card(props) {
           setEdata(searchedData);
         }}
       />{" "}
-      <div className="countries">
+      <div class="countries">
         {data
           .filter((country) =>
             country.name.common.toLowerCase().includes(edata)
