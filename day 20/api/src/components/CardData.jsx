@@ -1,11 +1,12 @@
 import React from "react";
 import "./CardData.css";
+import { Link } from "react-router-dom";
 
 function CardData(props) {
-  // console.log(props);
+  const name = props.data.name.common;
   return (
     <div>
-      <a class="country-card" href="/countrypage">
+      <Link class="country-card" to={`/countrypage?name=${name}`}>
         <img
           src={props.data.flags.png}
           alt={props.data.flags.alt}
@@ -29,7 +30,7 @@ function CardData(props) {
             {props.data.population}
           </p>
         </div>
-      </a>
+      </Link>
     </div>
   );
 }

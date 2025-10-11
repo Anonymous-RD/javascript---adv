@@ -1,10 +1,15 @@
 import React from "react";
 
 function CountryPage() {
+  const url = new URLSearchParams(document.location.search).get("name");
+  console.log(url);
+
   return (
     <div>
       hii from CountryPage
-      <h1>name </h1>
+      <br />
+      <img src="" alt="img" />
+      <h1>name- {url} </h1>
       <h1>Country </h1>
       <h1>Population </h1>
       <h1>Timezones </h1>
